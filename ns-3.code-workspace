@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "NS3",
+			"path": "/ns-3"
+		},
+		{
+			"name": "Project",
+			"path": "."
+		}
+	],
+	"settings": {}
+}

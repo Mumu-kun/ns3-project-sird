@@ -1,0 +1,40 @@
+{
+    "name": "NS3 Development Environment",
+    "build": {
+        "context": "..",
+        "dockerfile": "Dockerfile"
+    },
+    "workspaceFolder": "/ns-3/",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/ns3-project/,type=bind",
+    "remoteEnv": {
+        "PROJECT_DIR": "/workspaces/ns3-project/",
+        "NS3_DIR": "/ns-3",
+        "CMAKE_CXX_COMPILER_LAUNCHER": "ccache",
+        "CMAKE_C_COMPILER_LAUNCHER": "ccache"
+    },
+    "runArgs": [
+        "--cpus=2",
+        "--memory=3g",
+        "--memory-swap=8g"
+    ],
+    "hostRequirements": {
+        "cpus": 2,
+        "memory": "4gb",
+        "storage": "32gb"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "C_Cpp.default.compileCommands": "/ns-3/cmake-cache/compile_commands.json",
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "xaver.clang-format"
+            },
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "xaver.clang-format"
+            ]
+        }
+    },
+    "remoteUser": "root"
+}

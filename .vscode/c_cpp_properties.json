@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "ns3-linux",
+            "includePath": [
+                "${workspaceFolder}/build/include"
+            ],
+            "defines": [
+                "NS3_ASSERT_ENABLE",
+                "NS3_LOG_ENABLE",
+                "NS3_BUILD_PROFILE_DEBUG",
+                "__LINUX__"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": "${workspaceFolder}/cmake-cache/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
