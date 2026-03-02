@@ -4,6 +4,7 @@
         "context": "..",
         "dockerfile": "Dockerfile"
     },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
     "workspaceFolder": "/ns-3/",
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/ns3-project/,type=bind",
     "mounts": [
@@ -36,4 +37,5 @@
     },
     "remoteUser": "root",
     "postCreateCommand": "chmod 700 /root/.ssh 2>/dev/null || true && chmod 600 /root/.ssh/* 2>/dev/null || true"
+
 }
